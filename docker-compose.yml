@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+###> doctrine/doctrine-bundle ###
+  database:
+      image: mysql
+      restart: always
+      environment:
+        MYSQL_ROOT_PASSWORD: todoApp
+        MYSQL_DATABASE: todoApp
+      ports:
+        - "3307:3306"
+###< doctrine/doctrine-bundle ###
