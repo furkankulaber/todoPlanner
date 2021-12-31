@@ -52,7 +52,6 @@ class PlannerService
                         }
                     });
                     $developers = $this->descSortArray($developers,'orgRemainingTime');
-                    dump($developers);
                 }
 
                 foreach ($developers as $indexDev => $dev) {
